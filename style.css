@@ -1,0 +1,223 @@
+/* styles */
+/* called by your view template */
+body, section, header, footer, nav, ul, li, h1, h2, h3, h4, blockquote, p, div, wrapper {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+}
+
+header{
+  background-color: #404040;
+  padding: 2em 0.1em 2em 0.1em;
+  position: fixed;
+  width: 100vw;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e1ecf5;
+  text-transform: uppercase;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+/*  ++++++++ SPLASH ++++++++ */
+
+#splash {
+  height: 100vh;
+  background-color: #404040;
+  background-image: url("https://cdn.hyperdev.com/us-east-1%3Ad4ffcfaa-ba67-45e0-9f8a-a41ffcd75b29%2Ffluoritebackground.png");
+  background-position: center;
+  margin: 0 auto;
+}
+
+#splash h1{
+  color: #e1ecf5;
+  margin: 0 auto;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.75em;
+
+}
+
+#splash img{
+  height: 10vw 2em;
+  padding-top: 25%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+ opacity: 0.8;
+  padding-bottom: 10em;
+}
+/* +++++++++ ABOUT +++++++++++++++ */
+
+
+#About {
+  height: 100vh;
+  background-image: url("https://cdn.hyperdev.com/us-east-1%3Ad4ffcfaa-ba67-45e0-9f8a-a41ffcd75b29%2FSchematic3.png");
+  background-color: rgba(218,222,227,0.5);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#About h2{
+ margin: 0 auto;
+ padding-top: 5em;
+ padding-bottom: 1.5em;
+ text-align: center;
+ font-size: 3.5em
+ color: #404040;
+ font-weight: 500;
+}
+
+#About blockquote {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: #404040;
+
+}
+.strong {
+  font-family: "Poppins";
+  color: #404040;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+/* ======= GEMS ============ */
+
+#Gems {
+  background-color: #333;
+  background-size: 100vh;
+}
+#Gems div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Gems h1{
+  padding-top: 5em;
+  color: #e1ecf5;
+  text-align: center;
+  font-weight: 300;
+}
+#Gems a{
+  display: inline-block;
+  margin-bottom: 1em;
+  width: calc(50%-5px);
+  margin-right: 0.5em;
+  text-decoration: none;
+  color: #fff;
+}
+#Gems a:nth-of-type(2n) {
+  margin-right: 0;
+}
+#Gems a:hover img{
+  transform: scale(1.15);
+}
+#Gems img {
+  margin: 0;
+  overflow: hidden;
+}
+ #Gems figcaption {
+
+   max-width: 5em;
+   text-align: center;
+   margin: 0 auto;
+ }
+
+#Gems figure {
+  border: none;
+  max-width: 200%;
+  height: auto;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+
+
+/* ======== JEWELRY ======== */
+#Jewelry {
+  background-color: rgba(144,180,186,0.5);
+  height: 100vh;
+}
+
+#Jewelry hgroup{
+  padding-top: 6.5em;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+#Jewelry h2{
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 300;
+}
+ #Jewelry h3 {
+   color: #fff;
+   font-weight: 300;
+   padding-bottom: 1em;
+ }
+ #Jewelry h4 {
+   color: #fff;
+   font-style: italic;
+   text-align: center;
+   font-weight: 300;
+   font-size: 1.15em;
+   padding: 1.35em 0;
+ }
+ #Jewelry span {
+   text-decoration: underline;
+ }
+#Jewelry p {
+  color: #404040;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+#Jewelry p:first-letter{
+font-size: 300%;
+ font-weight: bold;
+ float: left;
+ font-family: Times;
+ padding-right: 0.25em;
+ color: #8babe0;
+}
+
+
+#Jewelry wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+#jewelry_left, #jewelry_center, #jewelry_right {
+  display: flex;
+  flex-direction: column;
+  max-height: 40vh;
+}
+
+#jewelry_right {
+  width: 40%;
+
+}
+#jewelry_right p:first-child {
+  padding-bottom: 1.5em;
+}
+
+#jewelry_center{
+  max-width: 25%;
+  padding-right: 2em;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#jewelry_left {
+  max-width: 30%;
+  padding-right: 2em;
+}

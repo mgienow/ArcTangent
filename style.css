@@ -108,11 +108,12 @@ nav ul {
 }
 #Gems a{
   display: inline-block;
-  margin-bottom: 1em;
-  width: calc(50%-5px);
+  margin-bottom: 5em;
+  width: 32%;
   margin-right: 0.5em;
   text-decoration: none;
   color: #fff;
+  max-height: 10em;
 }
 #Gems a:nth-of-type(2n) {
   margin-right: 0;
@@ -123,15 +124,17 @@ nav ul {
 #Gems img {
   margin: 0;
   overflow: hidden;
+  min-width: 10em;
+  height: 10em;
 }
  #Gems figcaption {
-
-   max-width: 5em;
    text-align: center;
-   margin: 0 auto;
+   padding: 1em 0.5em;
  }
 
 #Gems figure {
+  display: flex;
+  justify-content: space-between;
   border: none;
   max-width: 200%;
   height: auto;

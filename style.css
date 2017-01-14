@@ -8,9 +8,10 @@ body, section, header, footer, nav, ul, li, h1, h2, h3, h4, blockquote, p, div, 
 
 header{
   background-color: #404040;
-  padding: 2em 0.1em 2em 0.1em;
+  padding: 2em 0.1em 1em 0.1em;
   position: fixed;
   width: 100vw;
+
 }
 
 nav a {
@@ -30,21 +31,47 @@ nav ul {
 #splash {
   height: 100vh;
   background-color: #404040;
-  background-image: url("https://cdn.hyperdev.com/us-east-1%3Ad4ffcfaa-ba67-45e0-9f8a-a41ffcd75b29%2Ffluoritebackground.png");
+  display: flex;
+  flex-direction: column;
+  /*background-image: url("images/fluorite2.png");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 2em;*/
 }
+#flourite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 7em;
+  overflow: hidden;
+  height: 25em;
 
+}
+#logoBox {
+  position: absolute;
+}
+#logo {
+    height: 20vw;
+    opacity: 0.8;
+}
 #splash h1{
   color: #e1ecf5;
   margin: 0 auto;
   font-weight: 400;
   text-align: center;
   font-size: 1.75em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  position: relative;
+  top: 5em;
 
 }
 
-#splash img{
+/*#splash img{
   height: 10vw 2em;
   padding-top: 25%;
   margin: 0 auto;
@@ -52,42 +79,8 @@ nav ul {
   display: flex;
  opacity: 0.8;
   padding-bottom: 10em;
-}
-/* +++++++++ ABOUT +++++++++++++++ */
-
-
-#About {
-  height: 100vh;
-  background-image: url("https://cdn.hyperdev.com/us-east-1%3Ad4ffcfaa-ba67-45e0-9f8a-a41ffcd75b29%2FSchematic3.png");
-  background-color: rgba(218,222,227,0.5);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#About h2{
- margin: 0 auto;
- padding-top: 5em;
- padding-bottom: 1.5em;
- text-align: center;
- font-size: 3.5em
- color: #404040;
- font-weight: 500;
-}
-
-#About blockquote {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  color: #404040;
-
-}
-.strong {
-  font-family: "Poppins";
-  color: #404040;
-  font-weight: 500;
-  font-size: 1.1em;
-}
+  width: 35%;
+}*/
 
 /* ======= GEMS ============ */
 
@@ -135,11 +128,48 @@ nav ul {
 #Gems figure {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: none;
   max-width: 200%;
   height: auto;
   background: #ccc;
   transition: transform .2s ease-in-out;
+}
+
+
+/* +++++++++ ABOUT +++++++++++++++ */
+
+
+#About {
+  height: 100vh;
+  background-image: url("images/SuperLightSchematic.png");
+  background-color: #e1ecf5;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#About h2{
+ margin: 0 auto;
+ padding-top: 3em;
+ padding-bottom: 1em;
+ text-align: center;
+ font-size: 2em;
+ color: #404040;
+ font-weight: 500;
+}
+
+#About blockquote {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: #404040;
+  font-size: 1.1em;
+}
+.strong {
+  color: #404040;
+  font-weight: 700;
+  font-size: 1.1em;
 }
 
 

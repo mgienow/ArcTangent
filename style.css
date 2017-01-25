@@ -32,31 +32,13 @@ nav ul {
   height: 100vh;
   background-color: #404040;
   display: flex;
-  flex-direction: column;
-  /*background-image: url("images/fluorite2.png");
-  background-position: center;
+  align-items: flex-end;
+  background-image: url("images/logoBackground.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
-  margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 2em;*/
-}
-#flourite {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 7em;
-  overflow: hidden;
-  height: 25em;
 
-}
-#logoBox {
-  position: absolute;
-}
-#logo {
-    height: 20vw;
-    opacity: 0.8;
 }
 #splash h1{
   color: #e1ecf5;
@@ -64,23 +46,8 @@ nav ul {
   font-weight: 400;
   text-align: center;
   font-size: 1.75em;
-  padding-top: 1em;
-  padding-bottom: 2em;
-  position: relative;
-  top: 5em;
-
+  padding-bottom: 1em;
 }
-
-/*#splash img{
-  height: 10vw 2em;
-  padding-top: 25%;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
- opacity: 0.8;
-  padding-bottom: 10em;
-  width: 35%;
-}*/
 
 /* ======= GEMS ============ */
 

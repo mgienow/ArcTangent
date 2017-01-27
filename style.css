@@ -1,5 +1,3 @@
-/* styles */
-/* called by your view template */
 body, section, header, footer, nav, ul, li, h1, h2, h3, h4, blockquote, p, div, wrapper {
   margin: 0;
   padding: 0;
@@ -19,6 +17,9 @@ nav a {
   color: #e1ecf5;
   text-transform: uppercase;
 }
+nav a:hover {
+  color: #fff;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -33,7 +34,7 @@ nav ul {
   background-color: #404040;
   display: flex;
   align-items: flex-end;
-  background-image: url("images/logoBackground.png");
+  background-image: url("https://cdn.gomix.com/bcd233ae-6641-4250-b294-df1088854901%2FlogoBackground.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -65,6 +66,7 @@ nav ul {
   color: #e1ecf5;
   text-align: center;
   font-weight: 300;
+  font-size: 1.8em;
 }
 #Gems a{
   display: inline-block;
@@ -89,12 +91,26 @@ nav ul {
 }
  #Gems figcaption {
    text-align: center;
-   padding: 1em 0.5em;
+   font-size: 1em;
+   color: black;
+   display: flex;
+   flex-direction: column;
+   padding-left: 1em;
  }
+figcaption .firstRow {
+   padding: 1em 0 1em 2em;
+}
+figcaption .secondRow {
+  padding-right: 1.5em;
+}
+
+#Gems figcaption span {
+  font-size: 0.8em;
+}
 
 #Gems figure {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
   border: none;
   max-width: 200%;
@@ -109,7 +125,7 @@ nav ul {
 
 #About {
   height: 100vh;
-  background-image: url("images/SuperLightSchematic.png");
+  background-image: url("https://cdn.gomix.com/bcd233ae-6641-4250-b294-df1088854901%2FSuperLightSchematic.png");
   background-color: #e1ecf5;
   background-size: contain;
   background-repeat: no-repeat;
@@ -121,13 +137,15 @@ nav ul {
  padding-top: 3em;
  padding-bottom: 1em;
  text-align: center;
- font-size: 2em;
+ font-size: 2.5em;
  color: #404040;
  font-weight: 500;
+  opacity: 0.8;
+
 }
 
 #About blockquote {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
   color: #404040;
@@ -149,14 +167,17 @@ nav ul {
 
 #Jewelry hgroup{
   padding-top: 6.5em;
-  width: 80%;
+  width: 90%;
   text-align: center;
   margin: 0 auto;
 }
 #Jewelry h2{
-  font-size: 1.5em;
-  color: #fff;
+  font-size: 1.7em;
+  color: #759F9B;
   font-weight: 300;
+  font-family: 'Lora', serif;
+  text-shadow: 1px 2px 0px #fff;
+  padding-bottom: 10px;
 }
  #Jewelry h3 {
    color: #fff;
@@ -169,7 +190,7 @@ nav ul {
    text-align: center;
    font-weight: 300;
    font-size: 1.15em;
-   padding: 1.35em 0;
+   padding: 1.5em 0;
  }
  #Jewelry span {
    text-decoration: underline;
@@ -181,12 +202,14 @@ nav ul {
 }
 
 #Jewelry p:first-letter{
-font-size: 300%;
+font-size: 4.7em;
  font-weight: bold;
  float: left;
- font-family: Times;
- padding-right: 0.25em;
- color: #8babe0;
+ font-family: 'Lora';
+ padding-right: 0.2em;
+ color: #759F9B;
+line-height: 69px;
+text-shadow: 1px 1px 0px #fff;
 }
 
 
@@ -220,4 +243,47 @@ font-size: 300%;
 #jewelry_left {
   max-width: 30%;
   padding-right: 2em;
+}
+/*   ====== FOOTER ======== */
+footer a{
+  color: #FC963D;
+}
+footer {
+  background-color: #677A81;
+  height: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  padding: 0 !important;
+  color: #fff;
+  font-size: smaller;
+  opacity: 0.8;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+footer p:nth-child(2) {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+@media (max-width: 28em){
+  footer{
+    flex-direction: column;
+    padding: 0.5em 0;
+  }
+  footer p{
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0;
+  }
+}
+
+@media (min-width: 29em){
+  #nopipe::after {
+    content: "|";
+    padding-left: 5px;
+  }
 }

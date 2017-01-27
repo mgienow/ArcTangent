@@ -110,7 +110,6 @@ figcaption .secondRow {
 
 #Gems figure {
   display: flex;
-  /*justify-content: space-between;*/
   align-items: center;
   border: none;
   max-width: 200%;

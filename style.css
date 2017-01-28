@@ -110,6 +110,7 @@ figcaption .secondRow {
 
 #Gems figure {
   display: flex;
+  /*justify-content: space-between;*/
   align-items: center;
   border: none;
   max-width: 200%;
@@ -166,12 +167,12 @@ figcaption .secondRow {
 
 #Jewelry hgroup{
   padding-top: 6.5em;
-  width: 90%;
+  width: 95%;
   text-align: center;
   margin: 0 auto;
 }
 #Jewelry h2{
-  font-size: 1.7em;
+  font-size: 1.9em;
   color: #759F9B;
   font-weight: 300;
   font-family: 'Lora', serif;
@@ -243,6 +244,30 @@ text-shadow: 1px 1px 0px #fff;
   max-width: 30%;
   padding-right: 2em;
 }
+
+
+/*  ====== ABOUT ========= */
+#Contact{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 90%;
+  height: 100vh;
+}
+#contactLeft{
+  padding-left: 2em;
+  padding-top: 6.5em;
+  width: 50%;
+}
+#teaching {
+  float: left;
+  margin-right: 1em;
+}
+
+#contactRight{
+  padding-top: 6.5em;
+}
+
 /*   ====== FOOTER ======== */
 footer a{
   color: #FC963D;
